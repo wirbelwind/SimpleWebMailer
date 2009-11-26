@@ -21,6 +21,7 @@ class Boot {
 		Menu(Loc("Home", List("index"), "Home")),
 		Menu(Loc("Test", List("test"), "Test Page")),
 		Menu(Loc("form", List("hellform"), "Form")),
+		Menu(Loc("mail", List("mailform"), "Mail")),
 		)
     LiftRules.setSiteMap(SiteMap(entries:_*))
   }
