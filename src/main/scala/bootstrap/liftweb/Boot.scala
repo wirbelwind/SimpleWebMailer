@@ -17,7 +17,11 @@ class Boot {
     LiftRules.addToPackages("com.appspot.simplewebmailer")
 
     // Build SiteMap
-    val entries = Menu(Loc("Home", List("index"), "Home")) :: Nil
+    val entries = List(
+		Menu(Loc("Home", List("index"), "Home")),
+		Menu(Loc("Test", List("test"), "Test Page")),
+		Menu(Loc("form", List("hellform"), "Form")),
+		)
     LiftRules.setSiteMap(SiteMap(entries:_*))
   }
 }
