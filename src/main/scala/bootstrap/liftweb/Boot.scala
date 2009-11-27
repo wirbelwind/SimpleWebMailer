@@ -20,8 +20,8 @@ class Boot {
     val entries = List(
 		Menu(Loc("Home", List("index"), "Home")),
 		Menu(Loc("Test", List("test"), "Test Page")),
-		Menu(Loc("form", List("hellform"), "Form")),
-		Menu(Loc("mail", List("mailform"), "Mail")),
+		Menu(Loc("form", List("hellForm"), "Form")),
+		Menu(Loc("mail", List("mailForm"), "Mail")),
 		)
     LiftRules.setSiteMap(SiteMap(entries:_*))
   }
