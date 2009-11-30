@@ -1,12 +1,20 @@
 <lift:surround with="default" at="content">
-    <lift:MailForm.send />
-    <form>
-        <label for="to">To :</label>
-        <input type="text" name="to"/>
-        <label for="subject">Subject :</label>
-        <input type="text" name="subject"/>
-        <label for="content">Content :</label>
-        <input type="text" name="content"/>
-        <input type="submit" value="send"/>
-        </form>
+<lift:MailForm.send/>
+<form method="post">
+	<p>
+		<label for="to">To</label><br />
+		<input type="text" name="to" style="width:500px"/>
+	</p>
+	<p>
+		<label for="subject">Subject</label><br />
+		<input type="text" name="subject" style="width:500px" />
+	</p>
+	<p>
+		<label for="content">Content</label><br />
+		<textarea cols="40" name="content" style="width:500px" />
+	</p>
+	<p>
+	    <input type="submit" value="send"/>
+	</p>
+</form>
 </lift:surround>

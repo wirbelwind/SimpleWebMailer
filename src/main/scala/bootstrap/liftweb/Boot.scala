@@ -19,9 +19,7 @@ class Boot {
     // Build SiteMap
     val entries = List(
 		Menu(Loc("Home", List("index"), "Home")),
-		Menu(Loc("Test", List("test"), "Test Page")),
-		Menu(Loc("form", List("hellForm"), "Form")),
-		Menu(Loc("mail", List("mailForm"), "Mail")),
+		Menu(Loc("mail", List("mailForm"), "メール送信画面")),
 		)
     LiftRules.setSiteMap(SiteMap(entries:_*))
   }
